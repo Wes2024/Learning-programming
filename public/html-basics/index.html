@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wes · Portafolio</title>
+  <meta name="description" content="Portafolio de Wes — Desarrollador web en Ecuador" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a class="logo" href="/">wes.dev</a>
+    <nav aria-label="principal">
+      <a href="#projects">Proyectos</a>
+      <a href="#about">Sobre mí</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- CONTENIDO -->
+  <main>
+    <!-- HERO -->
+    <section class="hero" role="region" aria-label="Presentación">
+      <h1>Desarrollador web en formación — serio y rápido</h1>
+      <p>HTML/CSS/JS · PrestaShop · Laravel · React + TypeScript</p>
+      <a class="btn" href="#projects">Ver proyectos</a>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="about">
+      <h2>Lo que estoy aprendiendo</h2>
+      <ul class="grid">
+        <li>
+          <h3>HTML semántico</h3>
+          <p>Accesibilidad, ARIA y SEO.</p>
+        </li>
+        <li>
+          <h3>CSS moderno</h3>
+          <p>Flexbox, Grid y responsive.</p>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+          <p>Interacción, fetch y validación.</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="projects" class="projects">
+      <h2>Proyectos</h2>
+      <article class="card">
+        <img src="/next.svg" width="64" height="64" alt="Logo de Next.js" />
+        <div>
+          <h3>Portfolio v1</h3>
+          <p>Next.js + TypeScript + Tailwind (en progreso).</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <small>© <span id="year"></span> Wes · <a href="https://github.com/Wes2024">GitHub</a></small>
+  </footer>
+
+  <script>
+    // año dinámico
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
